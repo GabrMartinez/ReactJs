@@ -2,13 +2,12 @@ import React from "react";
 
 class Header extends React.Component {
     render () {
+    let {links} = this.props
     return (
     <>
         <h1>Header</h1>
         <nav>
-            <a href= "#">Link</a>
-            <a href= "#">Link</a>
-            <a href= "#">Link</a>
+            { links.map(link => <a href="#"> {link} </a>) }
         </nav>
     </>
     )};
